@@ -1,14 +1,9 @@
 import "./Styles/App.css";
-import Email from "./components/login/Email";
+// import { flexHubLogo } from "./assets";
+// import Login from "./routes/Login";
 
 function App() {
-  return (
-    <>
-      <div className="w-100% h-screen">
-        <Email />
-      </div>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
