@@ -2,7 +2,7 @@ import { hero_phones } from "../../../assets";
 
 function MainAdvert() {
   return (
-    <div className="relative bg-[#FF7C00] pt-[2.3rem] pl-[2.3rem] pb-[1.4rem] pr-2 rounded-md">
+    <div className="relative w-full bg-[#FF7C00] pt-[2.3rem] pl-[2.3rem] pb-[1.4rem] pr-2 tablet:rounded-md">
       <img
         src={hero_phones}
         alt="phones"

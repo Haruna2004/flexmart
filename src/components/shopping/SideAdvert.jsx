@@ -7,7 +7,7 @@ import {
 
 function SideAdvert() {
   return (
-    <div className="flex flex-col items-center gap-[14.8rem]">
+    <div className="hidden tablet:flex flex-col items-center gap-[14.8rem]">
       <img src={suit_advert} alt="suit" className="w-56 h-96" />
       <img src={suit_discount} alt="suit" className="w-56 h-96" />
       <img src={fuji_advert} alt="fuji" className="w-56 h-96" />

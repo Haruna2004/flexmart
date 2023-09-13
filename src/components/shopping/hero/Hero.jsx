@@ -4,12 +4,12 @@ import SubAdvert from "./SubAdvert";
 
 function Hero() {
   return (
-    <div className="flex flex-col pt-[1.8rem]">
+    <div className="flex flex-col tablet:pt-[1.8rem] ">
       {/* Advert */}
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-between gap-7">
         <MainAdvert />
 
-        <div className="flex flex-col gap-5">
+        <div className="flex-col gap-5 hidden md:flex">
           <SubAdvert
             mainText="Enjoy our free
 delivery service"
@@ -23,8 +23,6 @@ delivery service"
           />
         </div>
       </div>
-      {/* Select Items */}
-      <div>Select</div>
     </div>
   );
 }

@@ -1,14 +1,16 @@
-import flexHubLogo from "./flexhub.svg";
-import flexHubLogoII from "./flexhubII.png";
-import flexhub_store from "./flexhub_store.svg";
-import completed from "./completed.svg";
-import hamMenu from "./hamMenu.svg";
-import arrowDown from "./arrowDown.svg";
-import eyeOff from "./eye-off.svg";
-import favourite from "./favourite.svg";
-import profile from "./profile.svg";
-import search from "./search.svg";
-import shoppingBag from "./shoppingBag.svg";
+import flexHubLogo from "./logos-others/flexhub.svg";
+import flexHubLogoII from "./logos-others/flexhubII.png";
+import flexhub_store from "./logos-others/flexhub_store.svg";
+import completed from "./logos-others/completed.svg";
+import eyeOff from "./logos-others/eye-off.svg";
+// Header Assets
+import favourite from "./header/favourite.svg";
+import profile from "./header/profile.svg";
+import search from "./header/search.svg";
+import shoppingBag from "./header/shoppingBag.svg";
+import hamMenu from "./header/hamMenu.svg";
+import arrowDown from "./header/arrowDown.svg";
+import menu_chain from "./header/menu-chains.svg";
 
 // Hero Assets
 import hero_phones from "./hero/hero-phones.svg";
@@ -18,6 +20,15 @@ import fuji_advert from "./hero/fuji-advert.png";
 import fuji_discount from "./hero/fuji-discount.png";
 import suit_discount from "./hero/suit-discount.png";
 import suit_advert from "./hero/suit-advert.png";
+
+// Select
+import arrow_back from "./select/arrow-back.svg";
+import arrow_foward from "./select/arrow-foward.svg";
+import electronics from "./select/electronics.png";
+import fashion from "./select/fashion.png";
+import iphones from "./select/iphones.png";
+import laptops from "./select/laptops.png";
+import wrist_watch from "./select/wrist-watch.png";
 
 export {
   flexHubLogo,
@@ -38,4 +49,12 @@ export {
   fuji_discount,
   suit_advert,
   suit_discount,
+  menu_chain,
+  wrist_watch,
+  arrow_back,
+  arrow_foward,
+  electronics,
+  fashion,
+  iphones,
+  laptops,
 };
