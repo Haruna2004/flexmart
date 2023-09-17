@@ -3,6 +3,7 @@ import flexHubLogoII from "./logos-others/flexhubII.png";
 import flexhub_store from "./logos-others/flexhub_store.svg";
 import completed from "./logos-others/completed.svg";
 import eyeOff from "./logos-others/eye-off.svg";
+import star from "./logos-others/star.svg";
 // Header Assets
 import favourite from "./header/favourite.svg";
 import profile from "./header/profile.svg";
@@ -29,6 +30,18 @@ import fashion from "./select/fashion.png";
 import iphones from "./select/iphones.png";
 import laptops from "./select/laptops.png";
 import wrist_watch from "./select/wrist-watch.png";
+
+// flash-sales
+import flash_iphone from "./flash-sales/iphone.png";
+import lg_tv from "./flash-sales/lg_tv.png";
+import supreme_img from "./flash-sales/supreme.png";
+
+// section-images
+import vintage from "./sec-image/vintage.png";
+import bedroom_deco from "./sec-image/bedroom-deco.png";
+import clothing from "./sec-image/clothing.png";
+import home_deco from "./sec-image/home-deco.png";
+import game_world from "./sec-image/game.png";
 
 export {
   flexHubLogo,
@@ -57,4 +70,13 @@ export {
   fashion,
   iphones,
   laptops,
+  flash_iphone,
+  lg_tv,
+  supreme_img,
+  star,
+  bedroom_deco,
+  clothing,
+  vintage,
+  home_deco,
+  game_world,
 };

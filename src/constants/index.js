@@ -12,12 +12,12 @@ export const select_categories = [
     title: "Iphones",
     image: iphones,
   },
-  {
-    title: "Laptops",
-    image: laptops,
-  },
-  {
-    title: "Electronics",
-    image: electronics,
-  },
+  // {
+  //   title: "Laptops",
+  //   image: laptops,
+  // },
+  // {
+  //   title: "Electronics",
+  //   image: electronics,
+  // },
 ];
