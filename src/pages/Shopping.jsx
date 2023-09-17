@@ -1,4 +1,5 @@
 import SideAdvert from "../components/shopping/SideAdvert";
+import Footer from "../components/shopping/footer/Footer";
 // import Header from "../components/shopping/header/Header";
 import Hero from "../components/shopping/hero/Hero";
 import SelectCategories from "../components/shopping/select/SelectCategories";
@@ -20,8 +21,8 @@ function Shopping() {
           <ShopSection />
         </div>
       </div>
-
       {/* Footer */}
+      <Footer />
     </div>
   );
 }

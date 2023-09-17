@@ -1,8 +1,9 @@
 import { star, wrist_watch } from "../../../assets";
 import SectionImages from "./SectionImages";
-function TrendingItems() {
+function ItemsSection() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-y-7 mt-7">
+      {/* items */}
       <div className="grid grid-cols-3 gap-x-[1.1rem] gap-y-[1.7rem] tablet:grid-cols-5">
         {[0].map((idx) => (
           <Item key={idx} />
@@ -28,4 +29,4 @@ function Item() {
   );
 }
 
-export default TrendingItems;
+export default ItemsSection;

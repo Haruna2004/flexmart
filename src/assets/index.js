@@ -30,11 +30,21 @@ import fashion from "./select/fashion.png";
 import iphones from "./select/iphones.png";
 import laptops from "./select/laptops.png";
 import wrist_watch from "./select/wrist-watch.png";
+import jacket from "./select/jacket.png";
 
 // flash-sales
 import flash_iphone from "./flash-sales/iphone.png";
 import lg_tv from "./flash-sales/lg_tv.png";
 import supreme_img from "./flash-sales/supreme.png";
+
+// footer
+import send from "./footer/send.svg";
+import facebook from "./footer/facebook-icon.svg";
+import twitter from "./footer/twitter-icon.svg";
+import instagram from "./footer/instagram-icon.svg";
+import youtube from "./footer/youtube-icon.svg";
+import mastercard from "./footer/mastercard-logo.svg";
+import visa from "./footer/visa-logo.svg";
 
 // section-images
 import vintage from "./sec-image/vintage.png";
@@ -79,4 +89,12 @@ export {
   vintage,
   home_deco,
   game_world,
+  jacket,
+  send,
+  facebook,
+  instagram,
+  twitter,
+  youtube,
+  visa,
+  mastercard,
 };

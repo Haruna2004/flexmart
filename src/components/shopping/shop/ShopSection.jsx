@@ -1,6 +1,7 @@
 import FlashSales from "./FlashSales";
 import ShopHeader from "./ShopHeader";
-import TrendingItems from "./TrendingItems";
+import ItemsSection from "./ItemsSection";
+import NewItems from "./NewItems";
 
 function ShopSection() {
   return (
@@ -13,7 +14,17 @@ function ShopSection() {
       {/* Trending Items */}
       <div>
         <ShopHeader text={"Trending Items"} bottomLine />
-        <TrendingItems />
+        <ItemsSection />
+      </div>
+      {/* Limited Stock deal */}
+      <div>
+        <ShopHeader text={"Limited Stock Deals"} bottomLine />
+        <ItemsSection />
+      </div>
+      {/* New Items */}
+      <div>
+        <ShopHeader text={"New Items"} bottomLine />
+        <NewItems />
       </div>
     </div>
   );

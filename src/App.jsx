@@ -1,7 +1,7 @@
 import "./Styles/App.css";
-import Shopping from "./routes/Shopping";
+import Shopping from "./pages/Shopping";
 // import { flexHubLogo } from "./assets";
-// import Login from "./routes/Login";
+// import Login from "./pages/Login";
 
 function App() {
   return (
