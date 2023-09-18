@@ -9,19 +9,19 @@ import {
 function SectionImages() {
   return (
     <div className="flex justify-around gap-x-4">
-      <div className="flex flex-col gap-4">
+      <div className="hidden sm:flex flex-col gap-4 ">
         <TextImage imgSrc={vintage} text1="Vintage" text2="World" blackBg />
         <TextImage imgSrc={game_world} text1="Game" text2="World" />
       </div>
       {/* center image */}
-      <div>
-        <TextImage
-          imgSrc={bedroom_deco}
-          text1="Bedroom"
-          text2="Decor Beautiful"
-          isCenter
-        />
-      </div>
+
+      <TextImage
+        imgSrc={bedroom_deco}
+        text1="Bedroom"
+        text2="Decor Beautiful"
+        isCenter
+      />
+
       <div className="hidden tablet:flex flex-col gap-4">
         <TextImage imgSrc={clothing} text1="Clothing" text2="Accesories" />
         <TextImage
@@ -42,7 +42,7 @@ function TextImage({ text1, text2, blackBg, imgSrc, isCenter }) {
     <div
       className={cn(
         "flex items-center justify-center bg-contain",
-        isCenter && "w-[19.1rem] h-[13.7rem]",
+        isCenter && "w[19.1rem] w-full h-[13.7rem] bg-no-repeat bg-cover",
         !isCenter && "w-[10rem] h-[6.3rem]"
       )}
       style={{ backgroundImage: `url(${imgSrc})` }}

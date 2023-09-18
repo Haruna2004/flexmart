@@ -18,6 +18,7 @@ export default {
     screens: {
       md: "960px",
       tablet: "770px",
+      sm: "490px",
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
