@@ -8,7 +8,7 @@ import {
 } from "../../../assets";
 function SectionImages() {
   return (
-    <div className="flex justify-between gap-x-4">
+    <div className="flex justify-around gap-x-4">
       <div className="flex flex-col gap-4">
         <TextImage imgSrc={vintage} text1="Vintage" text2="World" blackBg />
         <TextImage imgSrc={game_world} text1="Game" text2="World" />
@@ -22,7 +22,7 @@ function SectionImages() {
           isCenter
         />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="hidden tablet:flex flex-col gap-4">
         <TextImage imgSrc={clothing} text1="Clothing" text2="Accesories" />
         <TextImage
           imgSrc={home_deco}

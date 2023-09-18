@@ -13,7 +13,7 @@ function FlashSales() {
         ))}
       </div>
       {/* pagination */}
-      <div className="flex justify-between gap-3 w-[5.7rem] h-[0.38rem] rounded-xl mt-5">
+      <div className="flex justify-between gap-3 w-[5.7rem] h-[0.38rem] rounded-xl mt-5 cursor-pointer">
         <div className="bg-primary-500 w-1/3 rounded-xl"></div>
         <div className="bg-[#D9D9D9] w-1/3 rounded-xl"></div>
         <div className="bg-[#D9D9D9] w-1/3 rounded-xl"></div>

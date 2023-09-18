@@ -4,7 +4,7 @@ import Profiles from "./Profiles";
 import Search from "./Search";
 function Header() {
   return (
-    <div className="w-full bg-black pt-[1em] tablet:pt-[2.4em] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em]">
+    <div className="w-full bg-black pt-[1rem] tablet:pt-[2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em]">
       {/* Desktop */}
       <div className="mx-auto max-w-5xl hidden tablet:block">
         <div className="w-[5.9em] h-[2.6em]">
