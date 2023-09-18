@@ -22,7 +22,7 @@ import fuji_discount from "./hero/fuji-discount.png";
 import suit_discount from "./hero/suit-discount.png";
 import suit_advert from "./hero/suit-advert.png";
 
-// Select
+// select
 import arrow_back from "./select/arrow-back.svg";
 import arrow_foward from "./select/arrow-foward.svg";
 import electronics from "./select/electronics.png";
