@@ -14,7 +14,7 @@ function Shopping() {
       <div className="flex tablet:px-7 md:px-14  tablet:py-4 md:py-8 gap-8 w-full bg-[#F6F1F1]">
         {/* Side Advert */}
         <SideAdvert />
-        <div className="flex flex-col w-full ">
+        <div className="flex flex-col w-full max-w-4xl mx-auto">
           {/* body */}
           <Hero />
           <SelectCategories />

@@ -1,8 +1,10 @@
 import {
+  electronics,
   facebook,
   fashion,
   instagram,
   iphones,
+  laptops,
   twitter,
   wrist_watch,
   youtube,
@@ -20,14 +22,26 @@ export const select_categories = [
     title: "Iphones",
     image: iphones,
   },
-  // {
-  //   title: "Laptops",
-  //   image: laptops,
-  // },
-  // {
-  //   title: "Electronics",
-  //   image: electronics,
-  // },
+  {
+    title: "Laptops",
+    image: laptops,
+  },
+  {
+    title: "Electronics",
+    image: electronics,
+  },
+  {
+    title: "Electronics",
+    image: electronics,
+  },
+  {
+    title: "Electronics",
+    image: electronics,
+  },
+  {
+    title: "Electronics",
+    image: electronics,
+  },
 ];
 
 export const social_links = [

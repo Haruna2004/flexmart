@@ -2,11 +2,11 @@ import { flash_iphone } from "../../../assets";
 
 function FlashSales() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-7">
       {/* items */}
-      <div className="flex justify-between shadow border">
-        {[0, 1].map((idx) => (
-          <div key={idx} className="flex">
+      <div className="flex justify-center sm:justify-between shadow border">
+        {[0].map((idx) => (
+          <div key={idx} className="flex w-full">
             <FlashSalesImage />
             <FlashSalesDetails />
           </div>
@@ -29,7 +29,7 @@ function FlashSales() {
           <div className="bg-[#F51616] rounded-sm p-[0.4rem] text-xs italic">
             Supreme
           </div>
-          <p className="text-xs">
+          <p className="text-xs text-center">
             Building brands in culture. Building culture in brands.
           </p>
         </div>

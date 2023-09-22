@@ -21,5 +21,5 @@ export default {
       sm: "490px",
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: ["prettier-plugin-tailwindcss", require("tailwind-scrollbar")],
 };
