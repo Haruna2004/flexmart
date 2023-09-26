@@ -10,7 +10,71 @@ import {
   twitter,
   wrist_watch,
   youtube,
+  add_box,
+  automobile,
+  baby,
+  computer,
+  dumbbel,
+  game_pad,
+  green_apple,
+  heartbeat,
+  home_icon,
+  mobile_phone,
+  plugs,
+  running_shoe,
 } from "../assets";
+
+export const categories = [
+  {
+    title: "Supermarket",
+    icon: green_apple,
+  },
+  {
+    title: "Health & Beauty",
+    icon: heartbeat,
+  },
+  {
+    title: "Home & Office",
+    icon: home_icon,
+  },
+  {
+    title: "Phones & Tablet",
+    icon: mobile_phone,
+  },
+  {
+    title: "Computing",
+    icon: computer,
+  },
+  {
+    title: "Electronics",
+    icon: plugs,
+  },
+  {
+    title: "Fashion",
+    icon: running_shoe,
+  },
+  {
+    title: "Baby products",
+    icon: baby,
+  },
+  {
+    title: "Gaming",
+    icon: game_pad,
+  },
+  {
+    title: "Sporting goods",
+    icon: dumbbel,
+  },
+  {
+    title: "Automobile",
+    icon: automobile,
+  },
+  {
+    title: "Other categories",
+    icon: add_box,
+  },
+];
+
 export const select_categories = [
   {
     title: "Wrist Watch",

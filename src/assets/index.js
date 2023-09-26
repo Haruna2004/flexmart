@@ -7,6 +7,8 @@ import star from "./logos-others/star.svg";
 import stared from "./logos-others/stared.svg";
 import home from "./logos-others/home-icon.svg";
 import dropDown from "./logos-others/dropDown.svg";
+import close from "./logos-others/close.svg";
+
 // Header Assets
 import favourite from "./header/favourite.svg";
 import profile from "./header/profile.svg";
@@ -15,6 +17,20 @@ import shoppingBag from "./header/shoppingBag.svg";
 import hamMenu from "./header/hamMenu.svg";
 import arrowDown from "./header/arrowDown.svg";
 import menu_chain from "./header/menu-chains.svg";
+
+// Categories Icons
+import add_box from "./categories/add-box.svg";
+import automobile from "./categories/automobile.svg";
+import baby from "./categories/baby.svg";
+import computer from "./categories/computer.svg";
+import dumbbel from "./categories/dumbbell.svg";
+import game_pad from "./categories/game-pad.svg";
+import green_apple from "./categories/green-apple.svg";
+import heartbeat from "./categories/heartbeat.svg";
+import mobile_phone from "./categories/mobile-phone.svg";
+import home_icon from "./categories/home.svg";
+import plugs from "./categories/plugs-fill.svg";
+import running_shoe from "./categories/running-shoe.svg";
 
 // Hero Assets
 import hero_phones from "./hero/hero-phones.svg";
@@ -62,6 +78,19 @@ export {
   completed,
   flexHubLogoII,
   hamMenu,
+  add_box,
+  automobile,
+  close,
+  baby,
+  computer,
+  dumbbel,
+  game_pad,
+  green_apple,
+  heartbeat,
+  home_icon,
+  mobile_phone,
+  plugs,
+  running_shoe,
   arrowDown,
   eyeOff,
   favourite,

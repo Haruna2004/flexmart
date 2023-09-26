@@ -2,7 +2,7 @@ import { arrowDown, hamMenu } from "../../../assets";
 
 function Menu() {
   return (
-    <div className="flex text-white items-center tablet:bg-[#FF7C00] tablet:py-[0.4em] tablet:px-[0.3em] rounded-[0.3em] gap-[0.4em]">
+    <div className="flex text-white items-center tablet:bg-[#FF7C00] tablet:py-[0.4em] tablet:px-[0.3em] rounded-[0.3em] gap-[0.4em] cursor-pointer">
       <img
         src={hamMenu}
         alt="M"

@@ -1,4 +1,4 @@
-import SideAdvert from "../shopping/SideAdvert";
+import SideAdvert from "../shopping/side/SideAdvert";
 import Hero from "../shopping/hero/Hero";
 import SelectCategories from "../shopping/select/SelectCategories";
 import ShopSection from "../shopping/shop/ShopSection";

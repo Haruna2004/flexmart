@@ -3,7 +3,7 @@ import {
   suit_discount,
   fuji_advert,
   fuji_discount,
-} from "../../assets";
+} from "../../../assets";
 
 function SideAdvert() {
   return (
