@@ -1,26 +1,16 @@
-import SideAdvert from "../components/shopping/SideAdvert";
 import Footer from "../components/shopping/footer/Footer";
 import Header from "../components/shopping/header/Header";
-import Hero from "../components/shopping/hero/Hero";
-import SelectCategories from "../components/shopping/select/SelectCategories";
-import ShopSection from "../components/shopping/shop/ShopSection";
+import MiniShop from "../components/shops/MiniShop";
+// import MainShop from "../components/shops/MainShop";
 
 function Shopping() {
+  const shop_items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   return (
     <div className="w-full h-full min-h-screen font-poppins relative">
       {/* Header */}
       <Header />
-
-      <div className="flex tablet:px-7 md:px-14  tablet:py-4 md:py-8 gap-8 w-full bg-[#F6F1F1]">
-        {/* Side Advert */}
-        <SideAdvert />
-        <div className="flex flex-col w-full max-w-4xl mx-auto">
-          {/* body */}
-          <Hero />
-          <SelectCategories />
-          <ShopSection />
-        </div>
-      </div>
+      {/* <MainShop /> */}
+      <MiniShop isFlash title={"Flash Sales"} shopItems={shop_items} />
       {/* Footer */}
       <Footer />
     </div>

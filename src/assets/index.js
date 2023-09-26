@@ -4,6 +4,9 @@ import flexhub_store from "./logos-others/flexhub_store.svg";
 import completed from "./logos-others/completed.svg";
 import eyeOff from "./logos-others/eye-off.svg";
 import star from "./logos-others/star.svg";
+import stared from "./logos-others/stared.svg";
+import home from "./logos-others/home-icon.svg";
+import dropDown from "./logos-others/dropDown.svg";
 // Header Assets
 import favourite from "./header/favourite.svg";
 import profile from "./header/profile.svg";
@@ -35,6 +38,7 @@ import jacket from "./select/jacket.png";
 // flash-sales
 import flash_iphone from "./flash-sales/iphone.png";
 import lg_tv from "./flash-sales/lg_tv.png";
+import shirt from "./flash-sales/shirt.png";
 import supreme_img from "./flash-sales/supreme.png";
 
 // footer
@@ -62,6 +66,7 @@ export {
   eyeOff,
   favourite,
   profile,
+  stared,
   search,
   shoppingBag,
   flexhub_store,
@@ -71,6 +76,7 @@ export {
   fuji_advert,
   fuji_discount,
   suit_advert,
+  dropDown,
   suit_discount,
   menu_chain,
   wrist_watch,
@@ -82,6 +88,8 @@ export {
   laptops,
   flash_iphone,
   lg_tv,
+  home,
+  shirt,
   supreme_img,
   star,
   bedroom_deco,

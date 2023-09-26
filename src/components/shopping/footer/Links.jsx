@@ -2,11 +2,13 @@ import { useState } from "react";
 import { mastercard, visa, arrow_foward } from "../../../assets";
 import { foot_links, social_links } from "../../../constants";
 import cn from "classnames";
+
 function Links() {
   const [showLink, setShowLink] = useState("");
   function changeShowLink(title) {
     title === showLink ? setShowLink("") : setShowLink(title);
   }
+
   return (
     <div className="pl-5 tablet:pl-10 pr-5 tablet:pr-14 pt-4 pb-7">
       {/* FootLinks */}
@@ -29,7 +31,9 @@ function FootLinks({ showLink, changeShowLink }) {
             className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
             onClick={() => changeShowLink(title)}
           >
-            <h2 className="text-[1.2rem] font-bold uppercase ">{title}</h2>
+            <h2 className="text-[1rem] tablet:text-[1.2rem] font-bold uppercase ">
+              {title}
+            </h2>
             <img
               src={arrow_foward}
               alt="open"
@@ -62,7 +66,9 @@ function SocialLinks({ showLink, changeShowLink }) {
         className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
         onClick={() => changeShowLink("Join us on")}
       >
-        <h2 className="text-[1.2rem] font-bold uppercase">Join us on</h2>
+        <h2 className="text-[1rem] tablet:text-[1.2rem] font-bold uppercase">
+          Join us on
+        </h2>
         <img
           src={arrow_foward}
           alt="open"
@@ -90,7 +96,9 @@ function PayMethods({ showLink, changeShowLink }) {
         className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
         onClick={() => changeShowLink("Payment Methods")}
       >
-        <h2 className="text-[1.2rem] font-bold uppercase">Payment Methods</h2>
+        <h2 className="text-[1rem] tablet:text-[1.2rem] font-bold uppercase">
+          Payment Methods
+        </h2>
         <img
           src={arrow_foward}
           alt="open"
