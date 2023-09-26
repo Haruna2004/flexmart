@@ -32,14 +32,11 @@ export const select_categories = [
     title: "Electronics",
     image: electronics,
   },
-  {
-    title: "Electronics",
-    image: electronics,
-  },
 ];
 
 export const flash_sales_items = [
   {
+    id: "1",
     image: flash_iphone,
     discount_percent: "-10%",
     title: "Iphone 14 pro max",
@@ -55,6 +52,7 @@ export const flash_sales_items = [
     ],
   },
   {
+    id: "2",
     image: lg_tv,
     discount_percent: "-50%",
     title: "LG Smart tv 55 inch",
@@ -70,6 +68,7 @@ export const flash_sales_items = [
     ],
   },
   {
+    id: "3",
     image: flash_iphone,
     discount_percent: "-10%",
     title: "Iphone 14 pro max",
@@ -85,6 +84,7 @@ export const flash_sales_items = [
     ],
   },
   {
+    id: "4",
     image: lg_tv,
     discount_percent: "-50%",
     title: "LG Smart tv 55 inch",
@@ -100,6 +100,7 @@ export const flash_sales_items = [
     ],
   },
   {
+    id: "5",
     image: flash_iphone,
     discount_percent: "-10%",
     title: "Iphone 14 pro max",
@@ -115,6 +116,7 @@ export const flash_sales_items = [
     ],
   },
   {
+    id: "6",
     image: lg_tv,
     discount_percent: "-50%",
     title: "LG Smart tv 55 inch",
