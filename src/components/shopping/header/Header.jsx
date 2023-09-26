@@ -4,13 +4,13 @@ import Profiles from "./Profiles";
 import Search from "./Search";
 function Header() {
   return (
-    <div className="w-full bg-black pt-[1rem] tablet:pt-[2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em]">
+    <div className="w-full bg-black pt-[1rem] tablet:pt-[1.2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em] shadow-md sticky top-0 z-20">
       {/* Desktop */}
       <div className="mx-auto max-w-5xl hidden tablet:block">
         <div className="w-[5.9em] h-[2.6em]">
           <img src={flexhub_store} alt="flexhub" className="object-fit" />
         </div>
-        <div className="flex items-center justify-start mt-[0.9em]">
+        <div className="flex items-center justify-start mt-[0.5em]">
           <Menu />
           <Search />
           <Profiles />

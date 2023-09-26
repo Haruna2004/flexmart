@@ -7,7 +7,7 @@ import ShopSection from "../components/shopping/shop/ShopSection";
 
 function Shopping() {
   return (
-    <div className="w-full h-screen font-poppins">
+    <div className="w-full h-full min-h-screen font-poppins relative">
       {/* Header */}
       <Header />
 
