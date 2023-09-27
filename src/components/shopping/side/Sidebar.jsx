@@ -1,13 +1,23 @@
 import cn from "classnames";
-import { home } from "../../../assets";
+import { close } from "../../../assets";
 import { categories } from "../../../constants";
 
-function Sidebar() {
+function Sidebar({ openSide, setOpenSide }) {
   return (
-    <div className={cn("fixed top-0 z-30  h-screen bg-black/20 w-full")}>
-      <div className="bg-white/95 h-full w-1/2 p-5 pt-2">
-        <img src={home} alt="home" className="cursor-pointer" />
-        <div className="space-y-5 mt-6 shadow-sm">
+    <div
+      className={cn(
+        "fixed top-0 z-30  h-screen bg-black/20 w-full transition-transform duration-150 xl:hidden",
+        !openSide && "-translate-x-full"
+      )}
+    >
+      <div className="bg-white h-full w-5/6 xs:w-3/5 sm:w-1/2 tablet:w-1/3  p-5 pt-5 sm:pt-2">
+        <img
+          src={close}
+          alt="home"
+          className="cursor-pointer w-6 hover:animate-pulse"
+          onClick={() => setOpenSide(!openSide)}
+        />
+        <div className="space-y-3 xs:space-y-5 mt-4 xs:mt-6 shadow-sm">
           {categories.map(({ title, icon }) => (
             <div
               key={title}

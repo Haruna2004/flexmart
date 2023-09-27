@@ -14,7 +14,7 @@ function NewItems() {
         <h3 className=" text-primary-500 font-medium">₦ 136,000</h3>
       </div>
       {/* Items */}
-      <div className="grid grid-cols-2 tablet:grid-cols-3 md:grid-cols-4 grid-rows-2 gap-x-4 gap-y-7">
+      <div className="grid grid-cols-2 tablet:grid-cols-3 xl:grid-cols-4 grid-rows-2 gap-x-4 gap-y-7">
         {[0].map((idx) => (
           <NewItem key={idx} />
         ))}

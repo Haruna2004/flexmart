@@ -16,9 +16,10 @@ export default {
       },
     },
     screens: {
-      md: "960px",
+      xl: "1110px",
       tablet: "770px",
       sm: "490px",
+      xs: "360px",
     },
   },
   plugins: [

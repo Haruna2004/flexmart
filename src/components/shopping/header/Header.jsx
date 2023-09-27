@@ -2,7 +2,7 @@ import { flexHubLogoII, flexhub_store } from "../../../assets";
 import Menu from "./Menu";
 import Profiles from "./Profiles";
 import Search from "./Search";
-function Header() {
+function Header({ setOpenSide }) {
   return (
     <div className="w-full bg-black pt-[1rem] tablet:pt-[1.2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em] shadow-md sticky top-0 z-20">
       {/* Desktop */}
@@ -11,7 +11,7 @@ function Header() {
           <img src={flexhub_store} alt="flexhub" className="object-fit" />
         </div>
         <div className="flex items-center justify-start mt-[0.5em]">
-          <Menu />
+          <Menu setOpenSide={setOpenSide} />
           <Search />
           <Profiles />
         </div>
@@ -20,7 +20,7 @@ function Header() {
       <div className="tablet:hidden flex flex-col">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <Menu />
+            <Menu setOpenSide={setOpenSide} />
             <img
               src={flexHubLogoII}
               alt="flexhub"

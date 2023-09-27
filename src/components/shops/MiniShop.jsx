@@ -2,7 +2,7 @@ import { home, arrow_foward, dropDown, stared, shirt } from "../../assets";
 import { flash_sales_items } from "../../constants";
 function MiniShop({ isFlash, isNew, shopItems, title }) {
   return (
-    <div className="flex flex-col tablet:px-7 md:px-14 tablet:py-4 md:py-8 pt-5 w-full bg-[#F6F1F1]">
+    <div className="flex flex-col tablet:px-7 xl:px-14 tablet:py-4 xl:py-8 pt-5 w-full bg-[#F6F1F1]">
       {/* nav back */}
       <div className="flex items-center gap-[0.7em] cursor-pointer ml-4">
         <img src={home} alt="home" className="w-[1.12em] h-[1.12em]" />
@@ -19,7 +19,7 @@ function MiniShop({ isFlash, isNew, shopItems, title }) {
         </div>
       </div>
       {/* items */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 md:grid-cols-4 gap-x-3 gap-y-5 p-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-5 p-3">
         {shopItems.map((idx) => (
           <FlashItem key={idx} isFlash={isFlash} isNew={isNew} />
         ))}

@@ -96,6 +96,10 @@ export const select_categories = [
     title: "Electronics",
     image: electronics,
   },
+  {
+    title: "Electronics",
+    image: electronics,
+  },
 ];
 
 export const flash_sales_items = [
