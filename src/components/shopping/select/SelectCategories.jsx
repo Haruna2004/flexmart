@@ -31,7 +31,7 @@ function SelectCategories() {
       <div
         className={cn(
           styles.itemsContainer,
-          select_categories.length > 5 && "tablet:justify-start"
+          select_categories.length > 5 && "tablet:justify-start",
         )}
         ref={scrollRef}
       >

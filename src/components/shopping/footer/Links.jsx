@@ -44,7 +44,7 @@ function FootLinks({ showLink, changeShowLink }) {
           <div
             className={cn(
               "flex flex-col gap-y-3 sm:mt-[1.13rem]",
-              showLink !== title && "hidden tablet:flex"
+              showLink !== title && "hidden tablet:flex",
             )}
           >
             {links.map(({ text, link }, index) => (
@@ -78,7 +78,7 @@ function SocialLinks({ showLink, changeShowLink }) {
       <div
         className={cn(
           "flex mt-[1.5rem] gap-3",
-          showLink !== "Join us on" && "hidden tablet:flex"
+          showLink !== "Join us on" && "hidden tablet:flex",
         )}
       >
         {social_links.map(({ link, icon }, index) => (
@@ -108,7 +108,7 @@ function PayMethods({ showLink, changeShowLink }) {
       <div
         className={cn(
           "flex mt-4",
-          showLink !== "Payment Methods" && "hidden tablet:flex"
+          showLink !== "Payment Methods" && "hidden tablet:flex",
         )}
       >
         <img src={mastercard} alt="mastercard" className="w-14 h-14" />

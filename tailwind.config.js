@@ -14,12 +14,13 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-    },
-    screens: {
-      xl: "1110px",
-      tablet: "770px",
-      sm: "490px",
-      xs: "360px",
+      screens: {
+        xl: "1110px",
+        md: { min: "800px", max: "1109px" },
+        tablet: "770px",
+        sm: "490px",
+        xs: "360px",
+      },
     },
   },
   plugins: [

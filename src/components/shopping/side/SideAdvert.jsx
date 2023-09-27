@@ -9,10 +9,15 @@ import cn from "classnames";
 
 function SideAdvert({ openSide }) {
   return (
-    <div className="hidden xl:flex flex-col items-center gap-[14.8rem]">
+    <div className="hidden xl:flex flex-col items-center gap-[12rem]">
       {/*  */}
       <div className="w-fit h-fit relative">
-        <div className={cn("bg-white w-56 h-fit", !openSide && "opacity-0")}>
+        <div
+          className={cn(
+            "bg-white w-56 h-fit transition-opacity duration-200",
+            !openSide && "opacity-0",
+          )}
+        >
           <AllCategories />
         </div>
         <img

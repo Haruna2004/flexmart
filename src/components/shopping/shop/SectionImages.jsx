@@ -43,7 +43,7 @@ function TextImage({ text1, text2, blackBg, imgSrc, isCenter }) {
       className={cn(
         "flex items-center justify-center bg-contain",
         isCenter && "w[19.1rem] w-full h-[13.7rem] bg-no-repeat bg-cover",
-        !isCenter && "w-[10rem] h-[6.3rem]"
+        !isCenter && "w-[10rem] h-[6.3rem]",
       )}
       style={{ backgroundImage: `url(${imgSrc})` }}
     >
@@ -51,7 +51,7 @@ function TextImage({ text1, text2, blackBg, imgSrc, isCenter }) {
         className={cn(
           "text-white text-[0.9rem] font-medium p-[0.37rem] flex flex-col items-center gap-[0.37rem] uppercase",
           blackBg && "bg-black/60",
-          isCenter && "-mt-14 bg-primary-500/60 gap-0"
+          isCenter && "-mt-14 bg-primary-500/60 gap-0",
         )}
       >
         <h2

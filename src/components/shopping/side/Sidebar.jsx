@@ -7,7 +7,7 @@ function Sidebar({ openSide, setOpenSide }) {
     <div
       className={cn(
         "fixed top-0 z-30  h-screen bg-black/20 w-full transition-transform duration-150 xl:hidden",
-        !openSide && "-translate-x-full"
+        !openSide && "-translate-x-full",
       )}
     >
       <div className="bg-white h-full w-5/6 xs:w-3/5 sm:w-1/2 tablet:w-1/3  p-5 pt-5 sm:pt-2">

@@ -61,7 +61,7 @@ function FlashSales() {
             key={idx}
             className={cn(
               "bg-primary-500 w-1/3 rounded-xl",
-              currentItems !== idx && "bg-[#d9d9d9]"
+              currentItems !== idx && "bg-[#d9d9d9]",
             )}
             onClick={() => goTo(idx)}
           ></div>
