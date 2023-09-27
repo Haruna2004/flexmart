@@ -5,7 +5,7 @@ import NewItems from "./NewItems";
 
 function ShopSection() {
   return (
-    <div className="flex flex-col gap-7 w-full mt-7 px-4 tablet:px-0">
+    <div className="mt-7 flex w-full flex-col gap-7 px-4 tablet:px-0 ">
       {/* FlashSales */}
       <div>
         <ShopHeader text={"Flash Sales"} />

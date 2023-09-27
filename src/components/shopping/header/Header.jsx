@@ -5,36 +5,35 @@ import Search from "./Search";
 import cn from "classnames";
 function Header({ setOpenSide }) {
   const styles = {
-    mediumHead:
-      "md:border-2 md:border-white md:flex md:max-w-none md:w-full md:flex-row md:bg-red-500",
+    mediumHead: "tablet:flex md:flex-row md:items-center xl:flex-col ",
   };
   return (
-    <div className="w-full bg-black pt-[1rem] tablet:pt-[1.2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em] shadow-md sticky top-0 z-20">
+    <div className="sticky top-0 z-20 w-full bg-black pb-[1.1em] pl-[1em] pr-[1em] pt-[1rem] shadow-md tablet:pl-[3.6em] tablet:pt-[1.2rem]">
       {/* Desktop */}
       <div
         className={cn(
-          "mx-auto max-w-5xl hidden tablet:block",
+          "tablet:bloc mx-auto hidden max-w-5xl",
           styles.mediumHead,
         )}
       >
-        <div className="w-[5.9em] h-[2.6em]">
+        <div className="h-[2.6em] w-[5.9em]">
           <img src={flexhub_store} alt="flexhub" className="object-fit" />
         </div>
-        <div className="flex items-center justify-start mt-[0.5em]">
+        <div className="mt-[0.5em] flex items-center justify-start">
           <Menu setOpenSide={setOpenSide} />
           <Search />
           <Profiles />
         </div>
       </div>
       {/* Mobile */}
-      <div className="tablet:hidden flex flex-col">
-        <div className="flex items-center justify-between mb-2">
+      <div className="flex flex-col tablet:hidden">
+        <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Menu setOpenSide={setOpenSide} />
             <img
               src={flexHubLogoII}
               alt="flexhub"
-              className="w-[4.9em] h-[1.7em] -mb-[2px]"
+              className="-mb-[2px] h-[1.7em] w-[4.9em]"
             />
           </div>
           <Profiles />
