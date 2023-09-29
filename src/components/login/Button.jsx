@@ -1,11 +1,13 @@
+import cn from "classnames";
 function Button({ text, BgColor }) {
   return (
-    <div>
-      <div
-        className={`w-[413px] h-[47px] bg-[${BgColor}] flex items-center justify-center text-center text-white font-medium rounded-md`}
-      >
-        {text}
-      </div>
+    <div
+      className={cn(
+        "flex h-[47px] w-full  cursor-pointer items-center justify-center rounded-md text-center font-medium text-white",
+        BgColor,
+      )}
+    >
+      {text}
     </div>
   );
 }

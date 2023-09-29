@@ -1,12 +1,15 @@
 import "./Styles/App.css";
 import Shopping from "./pages/Shopping";
-// import { flexHubLogo } from "./assets";
-// import Login from "./pages/Login";
+import Login from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Shopping />
+      <Routes>
+        <Route path="/*" element={<Shopping />} />
+        <Route path="/login/*" element={<Login />} />
+      </Routes>
     </>
   );
 }

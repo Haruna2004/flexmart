@@ -1,15 +1,15 @@
 function PinInput() {
   const digits = [0, 1, 2, 3, 4, 5];
   return (
-    <div className="inline-flex flex-start gap-[1.2em]">
+    <div className="flex w-full items-center justify-center gap-[1.2em]">
       {digits.map((digit) => (
         <div
           key={digit}
-          className="w-[2.7em] h-[3em] border border-black rounded-md flex items-center justify-center"
+          className="flex h-auto max-h-[3em] w-[2.7em] items-center justify-center rounded-md border border-black"
         >
           <input
             type="text"
-            className="w-full h-full outline-none rounded-md"
+            className="h-full w-full rounded-md text-center text-3xl font-bold outline-none"
           />
         </div>
       ))}

@@ -3,21 +3,21 @@ import { arrowDown, hamMenu } from "../../../assets";
 function Menu({ setOpenSide }) {
   return (
     <div
-      className="flex text-white items-center xl:bg-[#FF7C00] xl:py-[0.4em] xl:px-[0.3em] rounded-[0.3em] gap-[0.4em] cursor-pointer"
+      className="flex cursor-pointer items-center gap-[0.4em] rounded-[0.3em] text-white xl:bg-[#FF7C00] xl:px-[0.3em] xl:py-[0.4em]"
       onClick={() => setOpenSide((prev) => !prev)}
     >
       <img
         src={hamMenu}
         alt="M"
-        className="w-[1.8em] h-[2em] tablet:scale-125  xl:w-[1.5em] xl:h-[1.5em]"
+        className="h-[2em] w-[1.8em] xl:h-[1.5em] xl:w-[1.5em] tablet:h-auto  tablet:min-w-[24px] tablet:scale-125"
       />
-      <p className="text-[1em] font-bold hidden xl:block capitalize">
+      <p className="hidden text-[1em] font-bold capitalize xl:block">
         All CATEGORIES
       </p>
       <img
         src={arrowDown}
         alt="A"
-        className="w-[1.5em] h-[1.5em] hidden xl:block"
+        className="hidden h-[1.5em] w-[1.5em] xl:block"
       />
     </div>
   );
