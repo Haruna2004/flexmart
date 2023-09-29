@@ -9,7 +9,7 @@ function Search() {
         className="flex-1 bg-transparent text-[14.4px] outline-none"
         placeholder="Search Products, brands and categories"
       />
-      <div className=" hidden h-full  items-start justify-center rounded-r-[0.3em] bg-[#FF7C00] px-2 py-2.5 text-white tablet:flex">
+      <div className=" hidden h-full  cursor-pointer items-start justify-center rounded-r-[0.3em] bg-[#FF7C00] px-2 py-2.5 text-white tablet:flex">
         <p className="text-center text-[0.9em] font-bold">SEARCH</p>
       </div>
     </div>

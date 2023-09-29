@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import Input from "./Input";
 
@@ -16,12 +17,12 @@ function PersonalDetails() {
           <Input placeholder="First name*" />
           <Input placeholder="Middle name" />
           <Input placeholder="Last name*" />
-          <Input placeholder="Phone number" />
+          <Input placeholder="Phone number" type="number" />
         </div>
 
-        <div className="mt-[2em] w-5/6 tablet:w-3/4">
+        <Link to="/login/personal2" className="mt-[2em] w-5/6 tablet:w-3/4">
           <Button text={"Continue"} BgColor={"bg-[#FF7C00]"} />
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Input from "./Input";
+import { Link } from "react-router-dom";
 function Email() {
   return (
     <div className="flex w-full flex-1 flex-col items-center ">
@@ -16,12 +17,12 @@ function Email() {
           <Input placeholder="Email" />
         </div>
 
-        <div className=" mt-[2em] w-5/6">
+        <Link to="/login/create-acct" className=" mt-[2em] w-5/6">
           <Button text={"Continue"} BgColor={"bg-[#FF7C00]"} />
-        </div>
+        </Link>
 
         <h5 className="mt-[1.1em] text-[15px] font-bold text-[#FF7C00]">
-          Login or register with phone number
+          <Link to="/login/phone">Login or register with phone number</Link>
         </h5>
 
         <div className="mt-[3em] w-5/6">

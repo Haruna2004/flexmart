@@ -22,6 +22,7 @@ function Sidebar({ openSide, setOpenSide }) {
             <div
               key={title}
               className="flex w-full cursor-pointer items-center space-x-4 transition duration-150 hover:scale-105 active:text-primary-500"
+              onClick={() => setOpenSide((prev) => !prev)}
             >
               <img src={icon} alt="icon" className="" />
               <p className="whitespace-nowrap">{title}</p>

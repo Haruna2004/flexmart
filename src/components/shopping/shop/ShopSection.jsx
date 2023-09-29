@@ -2,30 +2,31 @@ import FlashSales from "./FlashSales";
 import ShopHeader from "./ShopHeader";
 import ItemsSection from "./ItemsSection";
 import NewItems from "./NewItems";
+import { Link } from "react-router-dom";
 
 function ShopSection() {
   return (
     <div className="mt-7 flex w-full flex-col gap-7 px-4 tablet:px-0 ">
       {/* FlashSales */}
-      <div>
+      <Link to="/flash-sales">
         <ShopHeader text={"Flash Sales"} />
         <FlashSales />
-      </div>
+      </Link>
       {/* Trending Items */}
-      <div>
+      <Link to="/trending-items">
         <ShopHeader text={"Trending Items"} bottomLine />
         <ItemsSection />
-      </div>
+      </Link>
       {/* Limited Stock deal */}
-      <div>
+      <Link to="/limited-stocks">
         <ShopHeader text={"Limited Stock Deals"} bottomLine />
         <ItemsSection />
-      </div>
+      </Link>
       {/* New Items */}
-      <div>
+      <Link to="/new-items">
         <ShopHeader text={"New Items"} bottomLine />
         <NewItems />
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import Input from "./Input";
 
@@ -13,15 +14,15 @@ function Phone() {
 
       <div className="flex w-full flex-col items-center px-2 sm:px-0 tablet:px-0 xs:px-0">
         <div className="mt-[2.5em] w-3/4">
-          <Input placeholder="Phone number" />
+          <Input placeholder="Phone number" type="number" />
         </div>
 
-        <div className="mt-[2em] w-3/4">
+        <Link to="/login/create-acct" className="mt-[2em] w-3/4">
           <Button text={"Continue"} BgColor={"bg-[#FF7C00]"} />
-        </div>
+        </Link>
 
         <h5 className="mt-[1.1em] text-[15px] font-bold text-[#FF7C00]">
-          Login or register with email address
+          <Link to="/login">Login or register with email address</Link>
         </h5>
       </div>
     </div>

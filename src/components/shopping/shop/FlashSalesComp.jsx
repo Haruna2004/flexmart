@@ -1,12 +1,12 @@
 // Image
 export function FlashSalesImage({ flash_item: { image, discount_percent } }) {
   return (
-    <div className="px-[0.8rem] pt-8 pb-8">
+    <div className="px-[0.8rem] pb-8 pt-8">
       <div className="relative  w-fit">
-        <img src={image} alt="item" className="w-32 h-auto" />
+        <img src={image} alt="item" className="h-auto w-32" />
         <div
-          className="absolute top-0 right-0 rounded-full bg-primary-500 text-white text-[0.6rem] font-bold h-8 w-8 
-              grid place-content-center"
+          className="absolute right-0 top-0 grid h-8 w-8 place-content-center rounded-full bg-primary-500 text-[0.6rem] 
+              font-bold text-white"
         >
           {discount_percent}
         </div>
@@ -20,7 +20,7 @@ export function FlashSalesDetails({
   flash_item: { title, discount_price, full_price, available, sold, time },
 }) {
   return (
-    <div className="px-[0.9rem] pt-10 pb-8 bg-white ">
+    <div className="bg-white px-[0.9rem] pb-8 pt-10 ">
       <h3 className="text-[1em] font-bold">{title}</h3>
       <h2>
         <span className="text-[1em] font-bold text-primary-500">
@@ -30,7 +30,7 @@ export function FlashSalesDetails({
           ₦ {full_price}
         </span>
       </h2>
-      <div className="flex text-[0.56rem] justify-between">
+      <div className="flex justify-between text-[0.56rem]">
         <p>
           <span>Available:</span>
           <span className="text-primary-500"> {available}</span>
@@ -41,15 +41,15 @@ export function FlashSalesDetails({
         </p>
       </div>
       {/* progress bar */}
-      <div className="bg-[#D9D9D9] w-full rounded-xl h-[0.6rem]">
-        <div className="bg-primary-500 w-1/3 rounded-l-xl h-[0.6rem]"></div>
+      <div className="h-[0.6rem] w-full rounded-xl bg-[#D9D9D9]">
+        <div className="h-[0.6rem] w-1/3 rounded-l-xl bg-primary-500"></div>
       </div>
       {/* time */}
-      <div className="flex justify-between mt-4">
+      <div className="mt-4 flex justify-between">
         {time.map(({ id, value }) => (
           <div key={id} className="flex flex-col items-center">
-            <div className="rounded-full bg-[#D9D9D9] h-6 w-7 grid place-content-center">
-              <p className="font-extrabold text-[0.56rem]">{value}</p>
+            <div className="grid h-6 w-7 place-content-center rounded-full bg-[#D9D9D9]">
+              <p className="text-[0.56rem] font-extrabold">{value}</p>
             </div>
             <p className="text-[0.56rem] capitalize">{id}</p>
           </div>
@@ -63,16 +63,16 @@ export function FlashSalesDetails({
 export function Banner() {
   return (
     <div
-      className="w-full h-36 mt-7 flex items-center justify-center rounded-sm bg-cover bg-no-repeat"
+      className="mt-7 flex h-36 w-full items-center justify-center rounded-sm bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(src/assets/flash-sales/supreme.png)`,
       }}
     >
-      <div className="text-white inline-flex flex-col items-center">
-        <div className="bg-[#F51616] rounded-sm p-[0.4rem] text-xs italic">
+      <div className="inline-flex flex-col items-center text-white">
+        <div className="rounded-sm bg-[#F51616] p-[0.4rem] text-xs italic">
           Supreme
         </div>
-        <p className="text-xs text-center">
+        <p className="text-center text-xs">
           Building brands in culture. Building culture in brands.
         </p>
       </div>

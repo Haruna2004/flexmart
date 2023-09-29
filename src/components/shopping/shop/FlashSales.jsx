@@ -37,16 +37,16 @@ function FlashSales() {
   }
 
   return (
-    <div className="flex flex-col items-center mt-7">
+    <div className="mt-7 flex flex-col items-center">
       {/* items */}
       <div
-        className="flex justify-center items-center sm:justify-between 
-      shadow border  w-full"
+        className="flex w-full items-center justify-center 
+      border shadow  sm:justify-between"
       >
         {currentItems.map((currentItem) => (
           <div
             key={currentItem}
-            className="flex justify-center w-full last:hidden tablet:last:flex"
+            className="flex w-full justify-center last:hidden tablet:last:flex"
           >
             <FlashSalesImage flash_item={flash_sales_items[currentItem]} />
             <FlashSalesDetails flash_item={flash_sales_items[currentItem]} />
@@ -55,13 +55,13 @@ function FlashSales() {
       </div>
 
       {/* pagination */}
-      <div className="flex justify-between gap-3 w-[5.7rem] h-[0.38rem] rounded-xl mt-5 cursor-pointer">
+      <div className="mt-5 flex h-[0.38rem] w-[5.7rem] cursor-pointer justify-between gap-3 rounded-xl">
         {items.map((idx) => (
           <div
             key={idx}
             className={cn(
-              "bg-primary-500 w-1/3 rounded-xl",
-              currentItems !== idx && "bg-[#d9d9d9]",
+              "w-1/3 rounded-xl bg-[#d9d9d9] ",
+              currentItems === idx && "bg-primary-500",
             )}
             onClick={() => goTo(idx)}
           ></div>

@@ -25,11 +25,13 @@ function Header({ setOpenSide }) {
         <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Menu setOpenSide={setOpenSide} />
-            <img
-              src={flexHubLogoII}
-              alt="flexhub"
-              className="-mb-[2px] h-[1.7em] w-[4.9em]"
-            />
+            <a href="#" className="-mb-[2px]">
+              <img
+                src={flexHubLogoII}
+                alt="flexhub"
+                className="h-[1.7em] w-[4.9em]"
+              />
+            </a>
           </div>
           <Profiles />
         </div>
@@ -45,13 +47,13 @@ export default Header;
 
 function Logo() {
   return (
-    <div className="-mb-1 flex flex-col justify-center xl:mb-1">
+    <a href="#" className="-mb-1 flex flex-col justify-center xl:mb-1">
       <h1 className="text-2xl font-black text-white">
         <span className="text-primary-500">flex</span>hub
       </h1>
       <p className="whitespace-nowrap text-[0.6rem] text-gray-300">
         No. 1 Best online Store
       </p>
-    </div>
+    </a>
   );
 }

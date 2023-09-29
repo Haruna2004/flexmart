@@ -203,19 +203,19 @@ export const flash_sales_items = [
 
 export const social_links = [
   {
-    link: "facebook.com",
+    link: "https://www.facebook.com/flexhubNg",
     icon: facebook,
   },
   {
-    link: "instagram.com",
+    link: "https://www.instagram.com/flexhubNg",
     icon: instagram,
   },
   {
-    link: "twitter.com",
+    link: "https://www.twitter.com/flexhubNg",
     icon: twitter,
   },
   {
-    link: "youtube.com",
+    link: "https://www.youtube.com/flexhub/Ng",
     icon: youtube,
   },
 ];

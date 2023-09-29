@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PinInput from "./PinInput";
 
 function SetupPin() {
@@ -17,9 +18,12 @@ function SetupPin() {
           <PinInput />
         </div>
 
-        <p className="mt-[2.4em] cursor-pointer text-center text-[1.1em] font-bold text-[#FF7C00]">
+        <Link
+          to="/login/complete"
+          className="mt-[2.4em] cursor-pointer text-center text-[1.1em] font-bold text-[#FF7C00]"
+        >
           Skip
-        </p>
+        </Link>
       </div>
     </div>
   );
