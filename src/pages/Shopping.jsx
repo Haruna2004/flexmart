@@ -5,6 +5,7 @@ import Sidebar from "../components/shopping/side/Sidebar";
 import MiniShop from "../components/shops/MiniShop";
 import MainShop from "../components/shops/MainShop";
 import { Route, Routes } from "react-router-dom";
+import Cart from "../components/shopping/cart/Cart";
 
 function Shopping() {
   const [openSide, setOpenSide] = useState(false);
@@ -15,9 +16,10 @@ function Shopping() {
       <Header setOpenSide={setOpenSide} />
       {/* sidebar-mobile */}
       <Sidebar openSide={openSide} setOpenSide={setOpenSide} />
-      {/* <MainShop openSide={openSide} /> */}
+      {/* Main shop */}
       <Routes>
         <Route path="/" element={<MainShop openSide={openSide} />} />
+        <Route path="/cart" element={<Cart />} />
         <Route
           path="/flash-sales"
           element={
