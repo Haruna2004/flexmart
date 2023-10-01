@@ -46,7 +46,7 @@ import arrow_back from "./select/arrow-back.svg";
 import arrow_foward from "./select/arrow-foward.svg";
 import electronics from "./select/electronics.png";
 import fashion from "./select/fashion.png";
-import iphones from "./select/iphones.png";
+import iphones from "./select/Iphones.png";
 import laptops from "./select/laptops.png";
 import wrist_watch from "./select/wrist-watch.png";
 import jacket from "./select/jacket.png";
