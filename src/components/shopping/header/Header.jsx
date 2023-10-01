@@ -1,4 +1,4 @@
-import { flexHubLogoII } from "../../../assets";
+// import { flexHubLogoII } from "../../../assets";
 import Menu from "./Menu";
 import Profiles from "./Profiles";
 import Search from "./Search";
@@ -14,7 +14,7 @@ function Header({ setOpenSide }) {
       <div className={cn("mx-auto hidden max-w-5xl", styles.mediumHead)}>
         <div className=" flex justify-center xl:flex-col-reverse xl:items-start xl:gap-2 tablet:items-center tablet:gap-3">
           <Menu setOpenSide={setOpenSide} />
-          <Logo />
+          <Logo subtext />
         </div>
         <Search />
         <Profiles />
@@ -26,11 +26,12 @@ function Header({ setOpenSide }) {
           <div className="flex items-center gap-2">
             <Menu setOpenSide={setOpenSide} />
             <a href="#" className="-mb-[2px]">
-              <img
+              {/* <img
                 src={flexHubLogoII}
                 alt="flexhub"
                 className="h-[1.7em] w-[4.9em]"
-              />
+              /> */}
+              <Logo />
             </a>
           </div>
           <Profiles />
@@ -45,15 +46,17 @@ function Header({ setOpenSide }) {
 
 export default Header;
 
-function Logo() {
+function Logo({ subtext }) {
   return (
-    <a href="#" className="-mb-1 flex flex-col justify-center xl:mb-1">
-      <h1 className="text-2xl font-black text-white">
-        <span className="text-primary-500">flex</span>hub
+    <a href="#" className="flex flex-col justify-center xl:mb-1 tablet:-mb-1">
+      <h1 className="text-2xl font-bold tracking-wider text-white">
+        <span className="text-primary-500"></span>flexmart
       </h1>
-      <p className="whitespace-nowrap text-[0.6rem] text-gray-300">
-        No. 1 Best online Store
-      </p>
+      {subtext && (
+        <p className="whitespace-nowrap text-[0.6rem] text-gray-300">
+          No. 1 Best online Store
+        </p>
+      )}
     </a>
   );
 }

@@ -203,19 +203,19 @@ export const flash_sales_items = [
 
 export const social_links = [
   {
-    link: "https://www.facebook.com/flexhubNg",
+    link: "https://www.facebook.com/flexmartNg",
     icon: facebook,
   },
   {
-    link: "https://www.instagram.com/flexhubNg",
+    link: "https://www.instagram.com/flexmartNg",
     icon: instagram,
   },
   {
-    link: "https://www.twitter.com/flexhubNg",
+    link: "https://www.twitter.com/flexmartNg",
     icon: twitter,
   },
   {
-    link: "https://www.youtube.com/flexhub/Ng",
+    link: "https://www.youtube.com/flexmart/Ng",
     icon: youtube,
   },
 ];
@@ -233,11 +233,11 @@ export const foot_links = [
         link: "#",
       },
       {
-        text: "How to shop on flexhub",
+        text: "How to shop on flexmart",
         link: "#",
       },
       {
-        text: "How to return a product on flexhub?",
+        text: "How to return a product on flexmart?",
         link: "#",
       },
       {
@@ -247,7 +247,7 @@ export const foot_links = [
     ],
   },
   {
-    title: "About flexhub",
+    title: "About flexmart",
     links: [
       {
         text: "About us",
@@ -268,10 +268,10 @@ export const foot_links = [
     ],
   },
   {
-    title: "How to make money with flexhub",
+    title: "How to make money with flexmart",
     links: [
       {
-        text: "Sell on flexhub",
+        text: "Sell on flexmart",
         link: "#",
       },
       {
