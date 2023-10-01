@@ -9,7 +9,7 @@ import {
 function SectionImages() {
   return (
     <div className="flex justify-around gap-x-4">
-      <div className="hidden flex-col gap-4 sm:flex xl:flex ">
+      <div className="hidden flex-col gap-4 sm:flex tablet:flex ">
         <TextImage imgSrc={vintage} text1="Vintage" text2="World" blackBg />
         <TextImage imgSrc={game_world} text1="Game" text2="World" />
       </div>

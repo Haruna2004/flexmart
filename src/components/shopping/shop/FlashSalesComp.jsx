@@ -1,4 +1,5 @@
 // Image
+import { supreme_img } from "../../../assets";
 export function FlashSalesImage({ flash_item: { image, discount_percent } }) {
   return (
     <div className="px-[0.8rem] pb-8 pt-8">
@@ -65,7 +66,7 @@ export function Banner() {
     <div
       className="mt-7 flex h-36 w-full items-center justify-center rounded-sm bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url(src/assets/flash-sales/supreme.png)`,
+        backgroundImage: `url(${supreme_img})`,
       }}
     >
       <div className="inline-flex flex-col items-center text-white">
