@@ -53,7 +53,7 @@ function FootLinks({ showLink, changeShowLink }) {
             {links.map(({ text, link }, index) => (
               <p
                 key={index}
-                className="text-[0.9rem] transition-colors duration-150 hover:text-primary-500"
+                className="text-[0.9rem] transition-colors duration-200 hover:underline"
               >
                 <a href={link}>{text}</a>
               </p>
