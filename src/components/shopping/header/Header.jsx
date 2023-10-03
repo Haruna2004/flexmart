@@ -1,31 +1,38 @@
-import { flexHubLogoII, flexhub_store } from "../../../assets";
+// import { flexHubLogoII } from "../../../assets";
 import Menu from "./Menu";
 import Profiles from "./Profiles";
 import Search from "./Search";
-function Header() {
+import cn from "classnames";
+function Header({ setOpenSide }) {
+  const styles = {
+    mediumHead:
+      "tablet:flex md:flex-row md:items-center md:justify-evenly md:gap- xl:flex-row xl:items-end",
+  };
   return (
-    <div className="w-full bg-black pt-[1rem] tablet:pt-[2rem] pl-[1em] tablet:pl-[3.6em] pr-[1em] pb-[1.1em]">
+    <div className="sticky top-0 z-20 w-full bg-black p-[1em] pb-[1.1em] shadow-md tablet:pt-[1.2rem]">
       {/* Desktop */}
-      <div className="mx-auto max-w-5xl hidden tablet:block">
-        <div className="w-[5.9em] h-[2.6em]">
-          <img src={flexhub_store} alt="flexhub" className="object-fit" />
+      <div className={cn("mx-auto hidden max-w-5xl", styles.mediumHead)}>
+        <div className=" flex justify-center xl:flex-col-reverse xl:items-start xl:gap-2 tablet:items-center tablet:gap-3">
+          <Menu setOpenSide={setOpenSide} />
+          <Logo subtext />
         </div>
-        <div className="flex items-center justify-start mt-[0.9em]">
-          <Menu />
-          <Search />
-          <Profiles />
-        </div>
+        <Search />
+        <Profiles />
       </div>
+
       {/* Mobile */}
-      <div className="tablet:hidden flex flex-col">
-        <div className="flex items-center justify-between mb-2">
+      <div className="flex flex-col tablet:hidden">
+        <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Menu />
-            <img
-              src={flexHubLogoII}
-              alt="flexhub"
-              className="w-[4.9em] h-[1.7em] -mb-[2px]"
-            />
+            <Menu setOpenSide={setOpenSide} />
+            <a href="#" className="-mb-[2px]">
+              {/* <img
+                src={flexHubLogoII}
+                alt="flexhub"
+                className="h-[1.7em] w-[4.9em]"
+              /> */}
+              <Logo />
+            </a>
           </div>
           <Profiles />
         </div>
@@ -38,3 +45,18 @@ function Header() {
 }
 
 export default Header;
+
+function Logo({ subtext }) {
+  return (
+    <a href="#" className="flex flex-col justify-center xl:mb-1 tablet:-mb-1">
+      <h1 className="text-2xl font-bold tracking-wider text-white">
+        <span className="text-primary-500"></span>flexmart
+      </h1>
+      {subtext && (
+        <p className="whitespace-nowrap text-[0.6rem] text-gray-300">
+          No. 1 Best online Store
+        </p>
+      )}
+    </a>
+  );
+}

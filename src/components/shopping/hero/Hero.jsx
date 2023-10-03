@@ -9,7 +9,7 @@ function Hero() {
       <div className="flex items-center justify-between gap-7">
         <MainAdvert />
 
-        <div className="flex-col gap-5 hidden md:flex">
+        <div className="flex-col gap-5 hidden xl:flex">
           <SubAdvert
             mainText="Enjoy our free
 delivery service"

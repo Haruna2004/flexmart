@@ -14,12 +14,17 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-    },
-    screens: {
-      md: "960px",
-      tablet: "770px",
-      sm: "490px",
+      screens: {
+        xl: "1110px",
+        md: { min: "800px", max: "1109px" },
+        tablet: "770px",
+        sm: { min: "490px", max: "770px" },
+        xs: { min: "360px", max: "490px" },
+      },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss", require("tailwind-scrollbar")],
+  plugins: [
+    "prettier-plugin-tailwindcss",
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

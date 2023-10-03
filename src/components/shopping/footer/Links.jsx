@@ -2,16 +2,18 @@ import { useState } from "react";
 import { mastercard, visa, arrow_foward } from "../../../assets";
 import { foot_links, social_links } from "../../../constants";
 import cn from "classnames";
+
 function Links() {
   const [showLink, setShowLink] = useState("");
   function changeShowLink(title) {
     title === showLink ? setShowLink("") : setShowLink(title);
   }
+
   return (
-    <div className="pl-5 tablet:pl-10 pr-5 tablet:pr-14 pt-4 pb-7">
+    <div className="pb-7 pl-5 pr-5 pt-4 tablet:pl-10 tablet:pr-14">
       {/* FootLinks */}
       <FootLinks changeShowLink={changeShowLink} showLink={showLink} />
-      <div className="flex mt-5 tablet:mt-16 gap-5 tablet:gap-40 flex-col-reverse tablet:flex-row">
+      <div className="mt-5 flex flex-col-reverse gap-5 tablet:mt-16 tablet:flex-row tablet:gap-40">
         <SocialLinks changeShowLink={changeShowLink} showLink={showLink} />
         <PayMethods changeShowLink={changeShowLink} showLink={showLink} />
       </div>
@@ -21,30 +23,38 @@ function Links() {
 
 function FootLinks({ showLink, changeShowLink }) {
   return (
-    <div className="flex items-start justify-between flex-col tablet:flex-row gap-y-5">
+    <div className="flex flex-col items-start justify-between gap-y-5 tablet:flex-row">
       {foot_links.map(({ title, links }, index) => (
         <div key={index} className="w-full">
           {/* title */}
           <div
-            className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
+            className="flex w-full cursor-pointer items-center justify-between border-y p-2 tablet:border-y-0 tablet:p-0"
             onClick={() => changeShowLink(title)}
           >
-            <h2 className="text-[1.2rem] font-bold uppercase ">{title}</h2>
+            <h2 className="text-[1rem] font-bold uppercase tablet:text-[1.2rem] ">
+              {title}
+            </h2>
             <img
               src={arrow_foward}
               alt="open"
-              className="rotate-90 w-6 h-6 block tablet:hidden"
+              className={cn(
+                "block h-6 w-6 transition-transform duration-300 tablet:hidden",
+                showLink === title && "rotate-90",
+              )}
             />
           </div>
 
           <div
             className={cn(
               "flex flex-col gap-y-3 sm:mt-[1.13rem]",
-              showLink !== title && "hidden tablet:flex"
+              showLink !== title && "hidden tablet:flex",
             )}
           >
             {links.map(({ text, link }, index) => (
-              <p href={link} key={index} className="text-[0.9rem]">
+              <p
+                key={index}
+                className="text-[0.9rem] transition-colors duration-200 hover:underline"
+              >
                 <a href={link}>{text}</a>
               </p>
             ))}
@@ -59,24 +69,31 @@ function SocialLinks({ showLink, changeShowLink }) {
   return (
     <div className="flex flex-col items-start">
       <div
-        className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
+        className="flex w-full cursor-pointer items-center justify-between border-y p-2 tablet:border-y-0 tablet:p-0"
         onClick={() => changeShowLink("Join us on")}
       >
-        <h2 className="text-[1.2rem] font-bold uppercase">Join us on</h2>
+        <h2 className="text-[1rem] font-bold uppercase tablet:text-[1.2rem]">
+          Join us on
+        </h2>
         <img
           src={arrow_foward}
           alt="open"
-          className="rotate-90 w-6 h-6 block tablet:hidden"
+          className={cn(
+            "block h-6 w-6 transition-transform duration-300 tablet:hidden",
+            showLink === "Join us on" && "rotate-90",
+          )}
         />
       </div>
       <div
         className={cn(
-          "flex mt-[1.5rem] gap-3",
-          showLink !== "Join us on" && "hidden tablet:flex"
+          "mt-[1.5rem] flex gap-3",
+          showLink !== "Join us on" && "hidden tablet:flex",
         )}
       >
-        {social_links.map(({ link, icon }, index) => (
-          <img key={index} src={icon} alt={link} className="w-6 h-6" />
+        {social_links.map(({ link, icon }) => (
+          <a href={link} key={link} rel="noreferrer" target="_blank">
+            <img src={icon} alt={link} className="h-6 w-6 cursor-pointer" />
+          </a>
         ))}
       </div>
     </div>
@@ -87,24 +104,29 @@ function PayMethods({ showLink, changeShowLink }) {
   return (
     <div className="flex flex-col">
       <div
-        className="flex justify-between items-center cursor-pointer w-full border-y tablet:border-y-0 p-2 tablet:p-0"
+        className="flex w-full cursor-pointer items-center justify-between border-y p-2 tablet:border-y-0 tablet:p-0"
         onClick={() => changeShowLink("Payment Methods")}
       >
-        <h2 className="text-[1.2rem] font-bold uppercase">Payment Methods</h2>
+        <h2 className="text-[1rem] font-bold uppercase tablet:text-[1.2rem]">
+          Payment Methods
+        </h2>
         <img
           src={arrow_foward}
           alt="open"
-          className="rotate-90 w-6 h-6 block tablet:hidden"
+          className={cn(
+            "block h-6 w-6 transition-transform duration-300 tablet:hidden",
+            showLink === "Payment Methods" && "rotate-90",
+          )}
         />
       </div>
       <div
         className={cn(
-          "flex mt-4",
-          showLink !== "Payment Methods" && "hidden tablet:flex"
+          "mt-4 flex",
+          showLink !== "Payment Methods" && "hidden tablet:flex",
         )}
       >
-        <img src={mastercard} alt="mastercard" className="w-14 h-14" />
-        <img src={visa} alt="visa" className="w-14 h-14" />
+        <img src={mastercard} alt="mastercard" className="h-14 w-14" />
+        <img src={visa} alt="visa" className="h-14 w-14" />
       </div>
     </div>
   );

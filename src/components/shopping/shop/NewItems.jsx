@@ -2,15 +2,19 @@ import { jacket, wrist_watch } from "../../../assets";
 
 function NewItems() {
   return (
-    <div className="flex gap-4 mt-7">
+    <div className="flex gap-4 mt-7 items-center justify-evenly">
       {/* main item */}
       <div className="flex flex-col items-center px-1 pt-12 pb-2 text-[0.9rem] bg-[#EEE]">
-        <img src={jacket} alt="item" className="w-[15.4rem] h-[16.7rem]" />
+        <img
+          src={jacket}
+          alt="item"
+          className="w-[10rem] tablet:w-[15.4rem] h-auto"
+        />
         <p className="mt-8">Men&apos;s leather jacket 2022</p>
         <h3 className=" text-primary-500 font-medium">₦ 136,000</h3>
       </div>
       {/* Items */}
-      <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-7">
+      <div className="grid grid-cols-2 tablet:grid-cols-3 xl:grid-cols-4 grid-rows-2 gap-x-4 gap-y-7">
         {[0].map((idx) => (
           <NewItem key={idx} />
         ))}

@@ -4,6 +4,11 @@ import flexhub_store from "./logos-others/flexhub_store.svg";
 import completed from "./logos-others/completed.svg";
 import eyeOff from "./logos-others/eye-off.svg";
 import star from "./logos-others/star.svg";
+import stared from "./logos-others/stared.svg";
+import home from "./logos-others/home-icon.svg";
+import dropDown from "./logos-others/dropDown.svg";
+import close from "./logos-others/close.svg";
+
 // Header Assets
 import favourite from "./header/favourite.svg";
 import profile from "./header/profile.svg";
@@ -12,6 +17,20 @@ import shoppingBag from "./header/shoppingBag.svg";
 import hamMenu from "./header/hamMenu.svg";
 import arrowDown from "./header/arrowDown.svg";
 import menu_chain from "./header/menu-chains.svg";
+
+// Categories Icons
+import add_box from "./categories/add-box.svg";
+import automobile from "./categories/automobile.svg";
+import baby from "./categories/baby.svg";
+import computer from "./categories/computer.svg";
+import dumbbel from "./categories/dumbbell.svg";
+import game_pad from "./categories/game-pad.svg";
+import green_apple from "./categories/green-apple.svg";
+import heartbeat from "./categories/heartbeat.svg";
+import mobile_phone from "./categories/mobile-phone.svg";
+import home_icon from "./categories/home.svg";
+import plugs from "./categories/plugs-fill.svg";
+import running_shoe from "./categories/running-shoe.svg";
 
 // Hero Assets
 import hero_phones from "./hero/hero-phones.svg";
@@ -27,7 +46,7 @@ import arrow_back from "./select/arrow-back.svg";
 import arrow_foward from "./select/arrow-foward.svg";
 import electronics from "./select/electronics.png";
 import fashion from "./select/fashion.png";
-import iphones from "./select/iphones.png";
+import iphones from "./select/Iphones.png";
 import laptops from "./select/laptops.png";
 import wrist_watch from "./select/wrist-watch.png";
 import jacket from "./select/jacket.png";
@@ -35,6 +54,7 @@ import jacket from "./select/jacket.png";
 // flash-sales
 import flash_iphone from "./flash-sales/iphone.png";
 import lg_tv from "./flash-sales/lg_tv.png";
+import shirt from "./flash-sales/shirt.png";
 import supreme_img from "./flash-sales/supreme.png";
 
 // footer
@@ -58,10 +78,24 @@ export {
   completed,
   flexHubLogoII,
   hamMenu,
+  add_box,
+  automobile,
+  close,
+  baby,
+  computer,
+  dumbbel,
+  game_pad,
+  green_apple,
+  heartbeat,
+  home_icon,
+  mobile_phone,
+  plugs,
+  running_shoe,
   arrowDown,
   eyeOff,
   favourite,
   profile,
+  stared,
   search,
   shoppingBag,
   flexhub_store,
@@ -71,6 +105,7 @@ export {
   fuji_advert,
   fuji_discount,
   suit_advert,
+  dropDown,
   suit_discount,
   menu_chain,
   wrist_watch,
@@ -82,6 +117,8 @@ export {
   laptops,
   flash_iphone,
   lg_tv,
+  home,
+  shirt,
   supreme_img,
   star,
   bedroom_deco,

@@ -2,13 +2,79 @@ import {
   electronics,
   facebook,
   fashion,
+  flash_iphone,
   instagram,
   iphones,
   laptops,
+  lg_tv,
   twitter,
   wrist_watch,
   youtube,
+  add_box,
+  automobile,
+  baby,
+  computer,
+  dumbbel,
+  game_pad,
+  green_apple,
+  heartbeat,
+  home_icon,
+  mobile_phone,
+  plugs,
+  running_shoe,
 } from "../assets";
+
+export const categories = [
+  {
+    title: "Supermarket",
+    icon: green_apple,
+  },
+  {
+    title: "Health & Beauty",
+    icon: heartbeat,
+  },
+  {
+    title: "Home & Office",
+    icon: home_icon,
+  },
+  {
+    title: "Phones & Tablet",
+    icon: mobile_phone,
+  },
+  {
+    title: "Computing",
+    icon: computer,
+  },
+  {
+    title: "Electronics",
+    icon: plugs,
+  },
+  {
+    title: "Fashion",
+    icon: running_shoe,
+  },
+  {
+    title: "Baby products",
+    icon: baby,
+  },
+  {
+    title: "Gaming",
+    icon: game_pad,
+  },
+  {
+    title: "Sporting goods",
+    icon: dumbbel,
+  },
+  {
+    title: "Automobile",
+    icon: automobile,
+  },
+  {
+    title: "Other categories",
+    icon: add_box,
+  },
+];
+
 export const select_categories = [
   {
     title: "Wrist Watch",
@@ -34,31 +100,122 @@ export const select_categories = [
     title: "Electronics",
     image: electronics,
   },
+];
+
+export const flash_sales_items = [
   {
-    title: "Electronics",
-    image: electronics,
+    id: "1",
+    image: flash_iphone,
+    discount_percent: "-10%",
+    title: "Iphone 14 pro max",
+    discount_price: "390,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
   },
   {
-    title: "Electronics",
-    image: electronics,
+    id: "2",
+    image: lg_tv,
+    discount_percent: "-50%",
+    title: "LG Smart tv 55 inch",
+    discount_price: "200,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
+  },
+  {
+    id: "3",
+    image: flash_iphone,
+    discount_percent: "-10%",
+    title: "Iphone 14 pro max",
+    discount_price: "390,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
+  },
+  {
+    id: "4",
+    image: lg_tv,
+    discount_percent: "-50%",
+    title: "LG Smart tv 55 inch",
+    discount_price: "200,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
+  },
+  {
+    id: "5",
+    image: flash_iphone,
+    discount_percent: "-10%",
+    title: "Iphone 14 pro max",
+    discount_price: "390,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
+  },
+  {
+    id: "6",
+    image: lg_tv,
+    discount_percent: "-50%",
+    title: "LG Smart tv 55 inch",
+    discount_price: "200,000",
+    full_price: "400,000",
+    available: "15",
+    sold: "50",
+    time: [
+      { id: "days", value: "365" },
+      { id: "hours", value: "17" },
+      { id: "mins", value: "51" },
+      { id: "secs", value: "05" },
+    ],
   },
 ];
 
 export const social_links = [
   {
-    link: "facebook.com",
+    link: "https://www.facebook.com/flexmartNg",
     icon: facebook,
   },
   {
-    link: "instagram.com",
+    link: "https://www.instagram.com/flexmartNg",
     icon: instagram,
   },
   {
-    link: "twitter.com",
+    link: "https://www.twitter.com/flexmartNg",
     icon: twitter,
   },
   {
-    link: "youtube.com",
+    link: "https://www.youtube.com/flexmart/Ng",
     icon: youtube,
   },
 ];
@@ -76,11 +233,11 @@ export const foot_links = [
         link: "#",
       },
       {
-        text: "How to shop on flexhub",
+        text: "How to shop on flexmart",
         link: "#",
       },
       {
-        text: "How to return a product on flexhub?",
+        text: "How to return a product on flexmart?",
         link: "#",
       },
       {
@@ -90,7 +247,7 @@ export const foot_links = [
     ],
   },
   {
-    title: "About flexhub",
+    title: "About flexmart",
     links: [
       {
         text: "About us",
@@ -111,10 +268,10 @@ export const foot_links = [
     ],
   },
   {
-    title: "How to make money with flexhub",
+    title: "How to make money with flexmart",
     links: [
       {
-        text: "Sell on flexhub",
+        text: "Sell on flexmart",
         link: "#",
       },
       {

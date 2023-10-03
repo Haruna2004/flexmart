@@ -4,13 +4,13 @@ function ShopHeader({ text, bottomLine }) {
   return (
     <div className="w-full">
       <div
-        className="bg-black rounded-sm p-3 text-white 
-      text-xs font-bold uppercase inline-flex items-center justify-center"
+        className="inline-flex items-center justify-center rounded-sm 
+      bg-black p-3 text-xs font-bold uppercase text-white"
       >
         {text}
       </div>
       <div
-        className={cn(bottomLine && "border-b border-black/20 flex-1")}
+        className={cn(bottomLine && "flex-1 border-b border-black/20")}
       ></div>
     </div>
   );
