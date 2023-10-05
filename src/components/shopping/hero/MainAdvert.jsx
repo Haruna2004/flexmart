@@ -1,29 +1,29 @@
 import { useNavigate } from "react-router-dom";
 import { hero_phones } from "../../../assets";
-import { useEffect, useState } from "react";
-import cn from "classnames";
-const ads = [0, 1, 2, 3];
+// import { useEffect, useState } from "react";
+// import cn from "classnames";
+// const ads = [0, 1, 2, 3];
 function MainAdvert() {
-  const [currentAd, setCurrentAd] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentAd === ads.length - 1) {
-        setCurrentAd(0);
+  // const [currentAd, setCurrentAd] = useState(0);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (currentAd === ads.length - 1) {
+  //       setCurrentAd(0);
 
-        return;
-      }
-      setCurrentAd(currentAd + 1);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [currentAd]);
+  //       return;
+  //     }
+  //     setCurrentAd(currentAd + 1);
+  //   }, 2000);
+  //   return () => clearInterval(interval);
+  // }, [currentAd]);
 
-  function goTo(idx) {
-    setCurrentAd(idx);
-  }
+  // function goTo(idx) {
+  //   setCurrentAd(idx);
+  // }
   return (
     <div className="relative w-full bg-[#FF7C00]  tablet:rounded-md">
       <AdvertProduct />
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center gap-4">
+      {/* <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center gap-4">
         {ads.map((idx) => (
           <div
             key={idx}
@@ -34,7 +34,7 @@ function MainAdvert() {
             onClick={() => goTo(idx)}
           ></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

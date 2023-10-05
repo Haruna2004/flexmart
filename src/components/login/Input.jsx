@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 function Input({ placeholder, icon, text, type, setShowPass }) {
   return (
-    <div className="flex h-[55px] w-full items-center border px-3">
+    <div className="flex h-[55px] w-full items-center border px-3 transition-colors duration-200 focus-within:ring-1 focus-within:ring-orange-200">
       <input
         type={type ? type : "text"}
         placeholder={placeholder}
-        className="px3 flex-1 outline-none"
+        className="flex-1 outline-none"
       />
       {icon && (
         <img

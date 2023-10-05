@@ -9,11 +9,15 @@ function Profiles() {
         src={favourite}
         alt="fav"
         className="h-[1.8em] w-[1.8em] cursor-pointer tablet:h-[2.2em] tablet:w-[2.2em]"
-        onClick={() => console.log("Run and navigate Favourite function")}
+        onClick={() =>
+          alert(
+            "Coming soon... Items you like but do not want to add to your cart are here in favourites.",
+          )
+        }
       />
       <div
         className="relative flex h-[1.8em] w-[1.8em] cursor-pointer items-center justify-center rounded-full bg-[#FF7C00] tablet:h-[2.7em] tablet:w-[2.7em]"
-        onClick={() => console.log("Run and navigate Cart function")}
+        onClick={() => alert("Cart is coming soon")}
       >
         <img
           src={shoppingBag}

@@ -1,5 +1,5 @@
 import Email from "../components/login/Email";
-import { flexHubLogo } from "../assets";
+// import { flexHubLogo } from "../assets";
 import { Routes, Route } from "react-router-dom";
 import Complete from "../components/login/Complete";
 import SetupPin from "../components/login/SetupPin";
@@ -10,12 +10,14 @@ import Phone from "../components/login/Phone";
 
 export default function Login() {
   return (
-    <div className="w-100% h-screen">
+    <div className="w-100% h-screen font-poppins">
       <div className="mx-auto h-screen max-w-xl">
         <div className="flex h-full flex-col items-center justify-between">
           {/* Logo */}
-          <div className="mt-[2em] h-[2em] w-[8em]">
-            <img src={flexHubLogo} alt="FlexHub" className="object-fit" />
+          <div className="mt-[2em]">
+            <h1 className="text-center text-[1.8rem] font-bold tracking-wider text-primary-500">
+              Flexmart
+            </h1>
           </div>
           {/* Main section */}
           <Routes>

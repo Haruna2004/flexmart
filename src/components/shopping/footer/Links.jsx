@@ -46,7 +46,7 @@ function FootLinks({ showLink, changeShowLink }) {
 
           <div
             className={cn(
-              "flex flex-col gap-y-3 sm:mt-[1.13rem]",
+              "s:mt-[1.13rem] mt-[1.13rem] flex flex-col gap-y-3 pl-3 tablet:mt-1 tablet:pl-0",
               showLink !== title && "hidden tablet:flex",
             )}
           >

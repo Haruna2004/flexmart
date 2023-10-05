@@ -25,7 +25,14 @@ function Email() {
           <Link to="/login/phone">Login or register with phone number</Link>
         </h5>
 
-        <div className="mt-[3em] w-5/6">
+        <div
+          className="mt-[3em] w-5/6"
+          onClick={() =>
+            alert(
+              "Fast and easy Login with Facebooks is coming to you soonest.",
+            )
+          }
+        >
           <Button text={"Login with Facebook"} BgColor={"bg-[#0288D1]"} />
         </div>
       </div>
