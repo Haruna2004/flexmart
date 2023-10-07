@@ -11,7 +11,7 @@ function CreateAccount() {
       <div className="mt-[1.2em] flex flex-col gap-[0.3]">
         <h3 className="text-center text-[23px]">Create your account</h3>
         <p className="text-center text-[12px] font-medium">
-          <span>Let”s get started by creating your account.</span>
+          <span>Let&apos;s get started by creating your account.</span>
           <br />
           <span>To keep your account safe, we need a strong password</span>
         </p>
